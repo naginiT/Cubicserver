@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/util
+	http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+<!-- <bean id="bluedart" class="com.java.bluedart"></bean>
+<bean id="dtdc" class="com.java.dtdc"></bean>
+<bean id="flipkart" class="com.java.flipkart">
+<constructor-arg ref="dtdc"></constructor-arg>
+</bean>
+ -->
+ <bean id="e" class="com.java.engine">
+ <property name="modelyear" value="2015"></property>
+ </bean>
+ <bean id="e1" class="com.java.engine1">
+ <property name="cc" value="1000cc"></property>
+ </bean>
+ 
+ <bean id="c" class="com.java.car" autowire="autodetect">
+ <constructor-arg value="audi"></constructor-arg>
+ 
+ </bean>
+
+</beans>
